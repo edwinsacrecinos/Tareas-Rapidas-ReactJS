@@ -3,7 +3,7 @@
 
 * HTML - CSS - JS
 * React JS
-* LocalStorage
+* LocalStorage (Próximo)
 
 ## Prueba la app:
 [Tareas Rápidas JS](https://www.google.com)
