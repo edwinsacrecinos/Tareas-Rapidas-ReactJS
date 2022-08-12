@@ -1,13 +1,14 @@
 import React from "react";
 import Tareaformulario from "./TareaFormulario";
 import '../css/Tarea.css'
-import {useState} from 'react';
+import { useState , useEffect } from 'react';
  import Tarea from "./Tareas";
 
 
 function ListaDeTareas (){
     
     const [tareas,setTareas]=useState([]);
+  
 
     const agregarTarea = (tarea)=> {
         if (tarea.texto.trim()){
@@ -33,6 +34,23 @@ function ListaDeTareas (){
         });
         setTareas(tareasActualizadas);
     }
+        //obtener tareas guardadas
+        useEffect(()=>{
+            const obtenerTareas=JSON.parse(window.localStorage.getItem('misTareas'));
+            if(obtenerTareas){
+                setTareas(obtenerTareas)
+            }
+        },()=>{})
+
+        //Obtener tareas para guardar
+        useEffect(()=>{
+            window.localStorage.setItem('misTareas',JSON.stringify(tareas))
+        },[tareas])
+    
+
+
+
+
 
     return (
         <>

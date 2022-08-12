@@ -5,7 +5,6 @@
 * React JS
 * LocalStorage (Próximo)
 
-## Prueba la app:
-[Tareas Rápidas JS](https://www.google.com)
 
 ## EJEMPLO:
+![Tareas Rápidas JS](https://raw.githubusercontent.com/edwinsacrecinos/storage_img/main/Lista_Rapida/listarapida.gif)
